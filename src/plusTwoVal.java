@@ -9,7 +9,7 @@ public class plusTwoVal {
         apple = myObj.nextInt() ;
         banana = myObj.nextInt() ;
 
-        System.out.println (apple + banana);
+        System.out.println (apple +","+ banana);
         
         // return 0;
     }
