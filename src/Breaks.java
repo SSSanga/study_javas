@@ -8,19 +8,29 @@ public class Breaks {
         // 분기는 if문
         // 콜센터 업무 안내 작성
         try {
+            Scanner myObj = new Scanner(System.in);  
+            // Create a Scanner object //Scanner의 변수는 최대한 밖에 .. 
+            String answer = "";
+            
             System.out.println ("안내입니다.");
             System.out.println ("1.대출"+"2.예금"+"3~9.종료");
-            //분기는 3번 돈다. if, else if, else
-            Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-            System.out.print ("입력하세요");
-            String answer = myObj.nextLine ();
-            if (answer.equals("1") ) {
-                System.out.println ("대출 업무 입니다.");
-            } else if (answer .equals("2") ) {
-                System.out.println ("예금 업무 입니다.");
-            } else {
-                                System.out.println ("안내 종료 입니다.");
+            //while이 true면 계속 while문이 돌기때문에 condition을 
+            boolean loops = true; 
+            //boolean은 true아니면 false 만 존재하며 자연수로만 ??인식????
+            while (loops) {
+                        //분기는 3번 돈다. if, else if, else
+                        System.out.print ("입력하세요");
+                        answer = myObj.nextLine ();
+                        if (answer.equals("1") ) {
+                        System.out.println ("대출 업무 입니다.");
+                        } else if (answer .equals("2") ) {
+                        System.out.println ("예금 업무 입니다.");
+                        } else {
+                        System.out.println ("안내 종료 입니다.");
+                        break;
+                        }
             }
+            
         } catch (Exception e) {
             System.out.println();
         } finally {
@@ -28,6 +38,7 @@ public class Breaks {
         }
         //java에서는 String글자를 ==로 사용하기가 힘듦. 
         //고로 변수.equals 를 써줘야함. 
+        //if문으로 분기를 지나고 다시 안내. 
 
 
         System.out.println();
