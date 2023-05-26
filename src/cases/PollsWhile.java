@@ -7,20 +7,22 @@ public class PollsWhile {
         try {
             Scanner myObj = new Scanner (System.in);
             String info = ("");
-            System.out.print ("Exit:종료 "+"Poll:설문 시작 "+"Statistic:설문 통계 ");
+            System.out.print ("(E)xit:종료 "+"(P)oll:설문 시작 "+"(S)tatistics:설문 통계 ");
             info = myObj.nextLine();
             
             boolean reply = true ;
            while (reply) {
             
-            if (info.equals ("P")){ 
+            if (info.equals ("P")||info.equals ("Poll")){ 
             
                 System.out.println ("설문을 시작합니다.");
+                info = myObj.nextLine();
 
-            } else if (info.equals ("S")){
+            } else if (info.equals ("S")||info.equals ("Statistics")){
                 System.out.println ("설문 통계를 시작합니다. ");
+                info = myObj.nextLine();
 
-            } else if (info.equals ("E")){
+            } else if (info.equals ("E")||info.equals ("Exit")){
                 System.out.println ("설문을 종료합니다.");
                 break;
                 }
