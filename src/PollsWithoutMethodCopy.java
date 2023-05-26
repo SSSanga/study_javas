@@ -11,7 +11,7 @@ public class PollsWithoutMethodCopy {
                 { "2. 문항" },
                 { "(1) 답항", "(2) 답항", "(3) 답항" },
         };
-        
+
         int count = 0;
         for (int second = 0; second < polls.length; second = second + 2) {
             System.out.println(polls[second][0]);
