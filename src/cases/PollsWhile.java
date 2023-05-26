@@ -27,7 +27,7 @@ public class PollsWhile {
                 break;
                 }
                 else {System.out.println ("설문이 에러났습니다.");
-            break;}
+                info = myObj.nextLine();}
                 
             }
 
