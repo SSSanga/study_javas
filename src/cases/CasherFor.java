@@ -27,17 +27,18 @@ public class CasherFor {
             // System.out.print("5번 가격 : ");
             // price[4] = myObj.nextInt();
 
-            int[] price = {0,0,0,0,0};
-            for (int listnumber = 0; listnumber < price.length ; listnumber = listnumber + 1) {
+            int[] price = { 0, 0, 0, 0, 0 };
+            for (int listnumber = 0; listnumber < price.length; listnumber = listnumber + 1) {
 
-                System.out.print("1번 가격 :");price[listnumber] = myObj.nextInt();
-                System.out.print("2번 가격 : ");price[listnumber] = myObj.nextInt();
-                System.out.print("3번 가격 : ");price[listnumber] = myObj.nextInt();
-                System.out.print("4번 가격 : ");price[listnumber] = myObj.nextInt();
-                System.out.print("5번 가격 : ");price[listnumber] = myObj.nextInt();
-                if (price[listnumber] > 100) {
+                System.out.print((listnumber+1) +"번 가격 :");
+                price[listnumber] = myObj.nextInt();
+                
+                if (price[listnumber] <= 99) {
+                    price[listnumber] = price[listnumber] * 1;
+                } else {
                     price[listnumber] = price[listnumber] * 0;
                 }
+
             }
 
             System.out.println("---담은 총합---");
