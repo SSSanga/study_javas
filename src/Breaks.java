@@ -26,7 +26,7 @@ public class Breaks {
                         } else if (answer .equals("2") ) {
                         System.out.println ("예금 업무 입니다.");
                         } else {
-                        System.out.println ("안내 종료 입니다.");
+                            System.out.println ("안내 종료 입니다.");
                         break;
                         }
             }
