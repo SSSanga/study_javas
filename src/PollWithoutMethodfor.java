@@ -4,7 +4,7 @@ public class PollWithoutMethodfor {
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         String answer = ""; 
         String [] answers = {"" , ""};
-        String [][] groups = {{"1.질문"},{"(1)","(2)","(3)","(4)"}}
+        String [][] groups = {{"1.질문"},{"(1)","(2)","(3)","(4)"}};
         // <answer들 넣을 수 있게 array를 만들어줌. 
 
         // nextLine이 Scanner에서 글자 입력하는 값. 
