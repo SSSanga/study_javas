@@ -39,7 +39,7 @@ public class PollsWhile {
         }
 
         finally {System.out.println ();}
-        System.out.println ();
+        System.out.println ("END");
         // return 0;
     }
 }
