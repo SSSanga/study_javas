@@ -48,8 +48,8 @@ public class Methods {
             first = plus.minus(first,second);
             first = plus.minus(first,second);
             first = plus.minus(first,second);
-
-
+            
+            System.out.println (first);
         
 
 
