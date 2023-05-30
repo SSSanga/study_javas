@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CasherFor {
     public static void main(String[] args) {
         try {
-            Scanner myObj = new Scanner(System.in);
+
             System.out.println("장바구니 5개까지 가능");
             System.out.println("===계산 시작===");
             // 1.각 품목마다 가격의 금액를 입력하도록 하자. nextInt_OK
@@ -27,23 +27,29 @@ public class CasherFor {
             // System.out.print("5번 가격 : ");
             // price[4] = myObj.nextInt();
 
-            int[] price = {90,80,150,10,20 };
-            // for (int listnumber = 0; listnumber < price.length; listnumber = listnumber + 1) {
-            //     price[listnumber] = myObj.nextInt();
-                
-                for (int first = 0; first < price.length; first = first + 1){
-                    System.out.println(price[first] +"번 가격 :");
-                    if (price[first] <= 99) {
-                        price[first] = price[first] * 1;
-                    } else {
-                        price[first] = price[first] * 0;
-                    }
-    
+            int[] prices = { 0, 0, 0, 0, 0 };
+            Scanner myObj = new Scanner(System.in);
+            for (int pay = 0; pay < prices.length; pay = pay + 1) {
+                System.out.print((pay + 1) + "번 가격 : ");
+                prices[pay] = myObj.nextInt();
+                if (prices[pay] <= 99) {
+                    prices[pay] = prices[pay] * 1;
+                } else {
+                    prices[pay] = prices[pay] * 0;
                 }
-                System.out.println("---담은 총합---");
-                System.out.println(price[0] + price[1] + price[2] + price[3] + price[4]);
-            }catch(Exception e){
-        // TODO: handle exception
-    }finally{};System.out.println();System.out.println("---계산종료---");
-    // return 0;
-        }}
+
+            }
+            System.out.println("---담은 총합---");
+            System.out.println(prices[0] + prices[1] + prices[2] + prices[3] + prices[4]);
+
+        }
+
+        catch (
+
+        Exception e) {
+            // TODO: handle exception
+        }
+        System.out.println("===계산 종료===");
+        // return 0;
+    }
+}
