@@ -37,16 +37,15 @@ public class Methods {
 
             Methods plus = new Methods();
             first = plus.add(first, second);
-            first = first + 5 ; 
-            first = plus.add(first, second);
             first = first + 4 ; 
             first = plus.add(first, second);
             first = first + 3 ; 
             first = plus.add(first, second);
             first = first + 2 ; 
-            first= plus.add(first, second);
-            first = plus.minus(first,second);
-            first = plus.minus(first,second);
+            first = plus.add(first, second);
+            first = first + 2 ; 
+            first = plus.add(first, second);
+            first = first + 1 ; 
             first = plus.minus(first,second);
             
             System.out.println (first);
