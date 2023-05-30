@@ -27,30 +27,23 @@ public class CasherFor {
             // System.out.print("5번 가격 : ");
             // price[4] = myObj.nextInt();
 
-            int[] price = { 0, 0, 0, 0, 0 };
-            for (int listnumber = 0; listnumber < price.length; listnumber = listnumber + 1) {
-
-                System.out.print((listnumber+1) +"번 가격 :");
-                price[listnumber] = myObj.nextInt();
+            int[] price = {90,80,150,10,20 };
+            // for (int listnumber = 0; listnumber < price.length; listnumber = listnumber + 1) {
+            //     price[listnumber] = myObj.nextInt();
                 
-                if (price[listnumber] <= 99) {
-                    price[listnumber] = price[listnumber] * 1;
-                } else {
-                    price[listnumber] = price[listnumber] * 0;
+                for (int first = 0; first < price.length; first = first + 1){
+                    System.out.println(price[first] +"번 가격 :");
+                    if (price[first] <= 99) {
+                        price[first] = price[first] * 1;
+                    } else {
+                        price[first] = price[first] * 0;
+                    }
+    
                 }
-
-            }
-
-            System.out.println("---담은 총합---");
-            System.out.println(price[0] + price[1] + price[2] + price[3] + price[4]);
-
-        } catch (Exception e) {
-            // TODO: handle exception
-        } finally {
-        }
-        ;
-        System.out.println();
-        System.out.println("---계산종료---");
-        // return 0;
-    }
-}
+                System.out.println("---담은 총합---");
+                System.out.println(price[0] + price[1] + price[2] + price[3] + price[4]);
+            }catch(Exception e){
+        // TODO: handle exception
+    }finally{};System.out.println();System.out.println("---계산종료---");
+    // return 0;
+        }}
