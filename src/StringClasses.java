@@ -11,8 +11,8 @@ public class StringClasses {
             name_second.equalsIgnoreCase("Puppy Cat ee"); // false
             name_second.length();// 13
             name_second = name_second.replaceAll("a", "e");//"Puppy Cet Bee"
-            String [] name_split_arrays = name_second.split(" ");
-            String name_second_substring = name_second.substring(3,10);
+            String [] name_split_arrays = name_second.split(" ");//0: "Puppy", 1: "Cet", 2: "Bee"
+            String name_second_substring = name_second.substring(3,10); //"py Cet " 3, 10지정하면 3과 9까지 출력됨. 
             System.out.println();
         } catch (Exception e) {
             // TODO: handle exception
