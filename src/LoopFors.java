@@ -2,11 +2,10 @@ public class LoopFors {
     public static void main(String[] args) {
         // for (statement 1; statement 2; statement 3) {
         //     // code block to be executed
-        // }
+        // } // Loop for문...
         int second = 10;
-        for (int first = 5; first < second; first = first + 2 ) 
-        {
-                // code block to be executed
+        for (int first = 5; first < second; first = first + 2 ) // 자체 사이즈가 정해져 있음. 
+                { // code block to be executed
             System.out.println (first);
             }
             System.out.println ();
